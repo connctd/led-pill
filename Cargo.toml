@@ -1,0 +1,42 @@
+[package]
+name = "pill-led"
+version = "0.1.0"
+authors = ["Till Klocke <till.klocke@gmail.com>"]
+edition = "2018"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+#cortex-m-rt             = "0.6.10"
+cortex-m-semihosting    = "0.3.4"
+panic-semihosting       = "0.5.2"
+cortex-m                = "0.6.1"
+stm32f103xx             = "0.11.0"
+cortex-m-rtfm           = "0.4.3"
+usb-device              = "0.2.2"
+usbd-serial             = "0.1"
+smart-leds              = {git = "https://github.com/smart-leds-rs/smart-leds"}
+ws2812-spi              = {git = "https://github.com/smart-leds-rs/ws2812-spi-rs"}
+
+#[dependencies.embedded-hal]
+#version = "0.2.3"
+#features = ["unproven"]
+
+[dependencies.stm32f1xx-hal]
+version = "0.3.0"
+features = ["rt", "stm32f103"]
+
+[dependencies.stm32-usbd]
+version = "0.3.1"
+features = ["stm32f103xx", "lpm_support"]
+
+[[bin]]
+name                    = "pill-led"
+test                    = false
+bench                   = false
+
+[profile.release]
+incremental             = false # disable incremental build to allow lto on nightly
+codegen-units           = 1     # better optimizations
+debug                   = true  # symbols are nice and they don't increase the size on Flash
+lto                     = true  # 
