@@ -11,7 +11,7 @@ monitor sleep 1000
 break HardFault
 break rust_begin_unwind
 
-file target/thumbv7m-none-eabi/debug/pill-led
+file target/thumbv7m-none-eabi/debug/led-pill
 
 load
 

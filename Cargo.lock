@@ -156,6 +156,23 @@ dependencies = [
 ]
 
 [[package]]
+name = "led-pill"
+version = "0.1.0"
+dependencies = [
+ "cortex-m 0.6.1 (registry+https://github.com/rust-lang/crates.io-index)",
+ "cortex-m-rtfm 0.4.3 (registry+https://github.com/rust-lang/crates.io-index)",
+ "cortex-m-semihosting 0.3.4 (registry+https://github.com/rust-lang/crates.io-index)",
+ "panic-semihosting 0.5.2 (registry+https://github.com/rust-lang/crates.io-index)",
+ "smart-leds 0.3.0 (git+https://github.com/smart-leds-rs/smart-leds)",
+ "stm32-usbd 0.3.1 (registry+https://github.com/rust-lang/crates.io-index)",
+ "stm32f103xx 0.11.0 (registry+https://github.com/rust-lang/crates.io-index)",
+ "stm32f1xx-hal 0.3.0 (registry+https://github.com/rust-lang/crates.io-index)",
+ "usb-device 0.2.2 (registry+https://github.com/rust-lang/crates.io-index)",
+ "usbd-serial 0.1.0 (registry+https://github.com/rust-lang/crates.io-index)",
+ "ws2812-spi 0.2.0 (git+https://github.com/smart-leds-rs/ws2812-spi-rs)",
+]
+
+[[package]]
 name = "nb"
 version = "0.1.2"
 source = "registry+https://github.com/rust-lang/crates.io-index"
@@ -187,23 +204,6 @@ source = "registry+https://github.com/rust-lang/crates.io-index"
 dependencies = [
  "cortex-m 0.6.1 (registry+https://github.com/rust-lang/crates.io-index)",
  "cortex-m-semihosting 0.3.4 (registry+https://github.com/rust-lang/crates.io-index)",
-]
-
-[[package]]
-name = "pill-led"
-version = "0.1.0"
-dependencies = [
- "cortex-m 0.6.1 (registry+https://github.com/rust-lang/crates.io-index)",
- "cortex-m-rtfm 0.4.3 (registry+https://github.com/rust-lang/crates.io-index)",
- "cortex-m-semihosting 0.3.4 (registry+https://github.com/rust-lang/crates.io-index)",
- "panic-semihosting 0.5.2 (registry+https://github.com/rust-lang/crates.io-index)",
- "smart-leds 0.3.0 (git+https://github.com/smart-leds-rs/smart-leds)",
- "stm32-usbd 0.3.1 (registry+https://github.com/rust-lang/crates.io-index)",
- "stm32f103xx 0.11.0 (registry+https://github.com/rust-lang/crates.io-index)",
- "stm32f1xx-hal 0.3.0 (registry+https://github.com/rust-lang/crates.io-index)",
- "usb-device 0.2.2 (registry+https://github.com/rust-lang/crates.io-index)",
- "usbd-serial 0.1.0 (registry+https://github.com/rust-lang/crates.io-index)",
- "ws2812-spi 0.2.0 (git+https://github.com/smart-leds-rs/ws2812-spi-rs)",
 ]
 
 [[package]]

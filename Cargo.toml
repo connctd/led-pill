@@ -1,5 +1,5 @@
 [package]
-name = "pill-led"
+name = "led-pill"
 version = "0.1.0"
 authors = ["Till Klocke <till.klocke@gmail.com>"]
 edition = "2018"
@@ -31,7 +31,7 @@ version = "0.3.1"
 features = ["stm32f103xx", "lpm_support"]
 
 [[bin]]
-name                    = "pill-led"
+name                    = "led-pill"
 test                    = false
 bench                   = false
 
